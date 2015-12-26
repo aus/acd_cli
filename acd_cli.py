@@ -1328,7 +1328,7 @@ def get_parser() -> tuple:
     meta_sp.set_defaults(func=metadata_action)
 
     fuse_sp = subparsers.add_parser('mount', help='[+] mount the cloud drive at a local directory')
-    fuse_sp.add_argument('--ro', '-ro', action='store_true', help='mount read-only')
+    fuse_sp.add_argument('--read-only', '-ro', action='store_true', help='mount read-only')
     fuse_sp.add_argument('--foreground', '-fg', action='store_true', help='do not detach')
     fuse_sp.add_argument('--single-threaded', '-st', action='store_true')
     # fuse_sp.add_argument('--multi-threaded', '-mt', action='store_false', dest='single_threaded')
